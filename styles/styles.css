@@ -3,3 +3,21 @@
 body{
     font-family: "Raleway", sans-serif;
 }
+.seats{
+    cursor: pointer;
+}
+
+.info{
+    color: #03071299;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.info-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+ input:focus{
+    outline: none;
+}

@@ -48,7 +48,7 @@
                     <h1 class="mb-6 mt-[70px] lg:text-6xl text-3xl font-extrabold text-white">End-to-End Travel with</h1>
                     <h2 class="text-[#1DD100] lg:text-6xl text-3xl font-extrabold">Express Paribahan</h2>
                     <p class="mb-5 pt-5 font-normal text-white lg:text-xl text-sm">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn bg-[#1DD100] font-semibold px-6  text-white border-0 mb-[150px]">Buy Tickets</button>
+                    <a href="#buy-section"><button class="btn bg-[#1DD100] font-semibold px-6  text-white border-0 mb-[150px]">Buy Tickets</button></a>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@
             <button class="btn text-[#1DD100] border-[#1DD100] px-6 text-center mt-20">See All Offers</button>
         </div>
         </section>
-        <section class="ticket w-full bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px] text-center mt-28 ">
+        <section id="buy-section" class="ticket w-full bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px] text-center mt-28 ">
             <h1 class="text-[#030712] text-4xl font-bold text-center pt-28 pb-5">Express Paribahan</h1>
             <p class="text-[#03071299] font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
             <div class="mt-12 lg:w-[1170px] w-11/12 mx-auto bg-white rounded-3xl flex lg:flex-row flex-col justify-between items-center">
@@ -135,7 +135,7 @@
                     </div>
                     <div class="flex items-center gap-4 bg-[#1DD10026] text-[#1DD100] text-xl font-medium rounded-xl p-4">
                         <img src="images/seat-green.png" alt="">
-                        <p><span>40</span> Seats left</p>
+                        <p><span id="seat-left">40</span> Seats left</p>
                     </div>
                 </div>
                 <div class="bg-[#F7F8F8] p-8 m-8 rounded-3xl">
@@ -161,7 +161,7 @@
               </div>
             </div>
 
-            <div class="mt-12 lg:w-[1170px] w-11/12 mx-auto bg-white rounded-3xl ">
+            <div class="mt-12 lg:w-[1170px] w-11/12 mx-auto flex lg:flex-row flex-col gap-6 bg-white rounded-3xl ">
               <div class="p-8 flex justify-between">
                 <div>
                   <div class="flex items-start pb-5">
@@ -180,113 +180,121 @@
                   <div class="flex justify-end mt-5 mb-5 ">
                     <i class="fa-solid fa-user-large bg-[#0307121A] px-8 py-4 rounded-lg"></i>
                   </div>
-                  <div class="flex gap-12">
-                    <div class="flex gap-6">
-                      <div class="flex flex-col gap-6">
-                        <h2 class="px-1 py-5  flex justify-center">A</h2>
-                        <h2 class="px-1 py-5  flex justify-center">B</h2>
-                        <h2 class="px-1 py-5  flex justify-center">C</h2>
-                        <h2 class="px-1 py-5  flex justify-center">D</h2>
-                        <h2 class="px-1 py-5  flex justify-center">E</h2>
-                        <h2 class="px-1 py-5  flex justify-center">F</h2>
-                        <h2 class="px-1 py-5  flex justify-center">G</h2>
-                        <h2 class="px-1 py-5  flex justify-center">H</h2>
-                        <h2 class="px-1 py-5  flex justify-center">I</h2>
-                        <h2 class="px-1 py-5  flex justify-center">J</h2>
-                      </div>
-                      <div class="flex flex-col gap-6">
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">A1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">B1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">C1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">D1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">E1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">F1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">G1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">H1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">I1</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">J1</h2>
-                      </div>
-                      <div class="flex flex-col gap-6">
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">A2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">B2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">C2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">D2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">E2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">F2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">G2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">H2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">I2</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">J2</h2>
-                      </div>
+                  <div class="grid grid-cols-4 gap-12">
+                   
                       
-                    </div>
-                    <div class="flex gap-6">
-                      <div class="flex flex-col gap-6">
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">A3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">B3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">C3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">D3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">E3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">F3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">G3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">H3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">I3</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">J3</h2>
-                      </div>
-                      <div class="flex flex-col gap-6">
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">A4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">B4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">C4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">D4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">E4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">F4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">G4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">H4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">I4</h2>
-                        <h2 class="bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center ">J4</h2>
-                      </div>
-                    </div>
+                      
+                      
+                        <div><h2 id="A1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >A1</h2></div>
+                        <div><h2 id="B1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >B1</h2></div>
+                        <div><h2 id="C1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >C1</h2></div>
+                        <div><h2 id="D1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >D1</h2></div>
+                        <div><h2 id="E1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >E1</h2></div>
+                        <div><h2 id="F1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >F1</h2></div>
+                        <div><h2 id="G1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >G1</h2></div>
+                        <div><h2 id="H1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >H1</h2></div>
+                        <div><h2 id="I1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >I1</h2></div>
+                        <div><h2 id="J1" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center" >J1</h2></div>
+                      
+                        <div><h2 id="A2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">A2</h2></div>
+                        <div><h2 id="B2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">B2</h2></div>
+                        <div><h2 id="C2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">C2</h2></div>
+                        <div><h2 id="D2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">D2</h2></div>
+                        <div><h2 id="E2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">E2</h2></div>
+                        <div><h2 id="F2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">F2</h2></div>
+                        <div><h2 id="G2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">G2</h2></div>
+                        <div><h2 id="H2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">H2</h2></div>
+                        <div><h2 id="I2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">I2</h2></div>
+                        <div><h2 id="J2" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">J2</h2></div>
+                      
+              
+                    
+                      
+                        <div><h2 id="A3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">A3</h2></div>
+                        <div><h2 id="B3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">B3</h2></div>
+                        <div><h2 id="C3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">C3</h2></div>
+                        <div><h2 id="G3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">G3</h2></div>
+                        <div><h2 id="D3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">D3</h2></div>
+                        <div><h2 id="E3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">E3</h2></div>
+                        <div><h2 id="F3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">F3</h2></div>
+                        <div><h2 id="H3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">H3</h2></div>
+                        <div><h2 id="I3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">I3</h2></div>
+                        <div><h2 id="J3" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">J3</h2></div>
+                      
+                      
+                        <div><h2 id="A4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">A4</h2></div>
+                        <div><h2 id="B4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">B4</h2></div>
+                        <div><h2 id="C4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">C4</h2></div>
+                        <div><h2 id="D4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">D4</h2></div>
+                        <div><h2 id="E4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">E4</h2></div>
+                        <div><h2 id="F4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">F4</h2></div>
+                        <div><h2 id="G4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">G4</h2></div>
+                        <div><h2 id="H4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">H4</h2></div>
+                        <div><h2 id="I4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">I4</h2></div>
+                        <div><h2 id="J4" class="seats bg-[#F7F8F8] rounded-xl px-12 py-5 w-24 flex justify-center">J4</h2></div>
+                      
+                    
                   </div>
                 </div>
                 <div>
 
                 </div>
               </div>
-              <div>
-                <div class="flex items-start pb-5">
+              <div class="flex-1 m-6">
+                <div class="flex items-start mt-8 pb-5">
                   <h3 class="text-2xl font-semibold text-black">Selected Seats</h3>
                 </div>
-                <div class="bg-[#F7F8F8] p-8">
+                <div id="info-conatainer" class="bg-[#F7F8F8] p-8 flex flex-col rounded-2xl ">
                   <div class="flex justify-between border-b-2 border-dashed py-4">
-                    <h2 class="text-black font-semibold text-lg">Seat <span class="bg-[#1DD100] px-2 rounded-lg">2</span></h2>
+                    <h2 class="text-black font-semibold text-lg">Seat <span id="count" class="bg-[#1DD100] px-2 rounded-lg">0</span></h2>
                     <h2 class="text-black font-semibold text-lg">Coach-Class</h2>
                     <h2 class="text-black font-semibold text-lg">Price</h2>
                   </div>
-                  <div class="border-b-2">
-                    <div class="flex justify-between py-4">
-                      <h2 class="text-[#03071299] font-semibold text-lg">C2</h2>
-                      <h2 class="text-[#03071299] font-semibold text-lg">Economy</h2>
-                      <h2 class="text-[#03071299] font-semibold text-lg">550</h2>
-                    </div>
-                    <div class="flex justify-between pb-4">
-                      <h2 class="text-[#03071299] font-semibold text-lg">C2</h2>
-                      <h2 class="text-[#03071299] font-semibold text-lg">Economy</h2>
-                      <h2 class="text-[#03071299] font-semibold text-lg">550</h2>
-                    </div>
+                  <div id="seat-info-container" class="border-b-2">
+                    
+                    
                   </div>
                   <div>
                     <div class="flex justify-between  py-4">
                       <h2 class="text-black font-semibold text-lg">Total Price</h2>
-                      <h2 class="text-black font-semibold text-lg">BDT 1000tk</h2>
+                      <h2 class="text-black font-semibold text-lg">BDT <span id="total-cost">0</span>tk</h2>
                     </div>
-                    <div>
-                      <input type="text" placeholder="Have any copupon?" class="py-5 pl-3 rounded-2xl"><button class="bg-[#1DD100] text-white py-2 border-8 border-white rounded-2xl px-5">Apply</button>
+                    <div class="flex">
+                      <input id="coupon-code" type="text" placeholder="Have any coupon?" class="coupon py-3 pl-3 flex-1  rounded-l-2xl">
+                      <button id="send" class="btn bg-[#1DD100] text-white  rounded-l-none rounded-r-2xl px-5" disabled >Apply</button>
+                    </div>
+                    <div class="flex justify-between  py-4">
+                      <h2 class="text-black font-semibold text-lg">Grand Total</h2>
+                      <h2 class="text-black font-semibold text-lg">BDT <span id="grand-total">0</span>tk</h2>
                     </div>
                   </div>
                 </div>
+                <div class="flex flex-col gap-6 text-left" >
+                  
+                    <div>
+                      <h3 class="text-[#030712] font-semibold text-lg pt-5 pb-4">Passenger Name*</h3>
+                      <input type="text" placeholder="Enter Your Name" class="w-full border py-5 pl-5 rounded-2xl" required>
+                    </div>
+                    <div>
+                      <h3 class="text-[#030712] font-semibold text-lg pt-5 ">Phone Number*</h3>
+                      <input type="number" placeholder="Enter Your Phone Number"class="w-full border py-5 pl-5 rounded-2xl" required>
+                    </div>
+                    <div>
+                      <h3 class="text-[#030712] font-semibold text-lg pt-5 ">Email*</h3>
+                      <input type="email" placeholder="Enter Your email"class="w-full border py-5 pl-5 rounded-2xl" >
+                    </div>
+                    <button class="btn bg-[#1DD100] text-white font-extrabold text-xl ">NEXT</button>
+                    <div class="flex justify-between">
+                      <h3><u>Terms & Conditions</u></h3>
+                      <h3><u>Cancellation Policy</u></h3>
+                    </div>
+                  
+                </div>
               </div>
+              
             </div>
         </section>
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>
