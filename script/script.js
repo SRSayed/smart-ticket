@@ -5,11 +5,32 @@ const price =550 ;
 for(const seat of seats){
     seat.addEventListener("click", function(event){
     // add background
-    seat.classList.add('bg-lime-500');
+    
+    
     // add/minus seat count 
-    count= count+1;
+    
+    if(count < 4){
+        if (!seat.classList.contains('selected')) {
+            seat.classList.add('selected');
+            seat.classList.add('bg-lime-500');
+            count= count+1;
+            
+          } 
+          else {
+            alert('This seat is already booked!');
+            return;
+          }
+    
     document.getElementById('count').innerText= count;
     document.getElementById('seat-left').innerText= 40-count;
+    }
+    else{
+        alert("maximum 4 seats allowed")
+        return;
+    }
+
+
+    
     // set seat info
 
     const seatName =event.target.parentNode.childNodes[0].innerText
@@ -36,6 +57,7 @@ for(const seat of seats){
         div.appendChild(head3);
 
         seatInfoContainer.appendChild(div);
+        
 
     // total 
 
@@ -55,46 +77,61 @@ function totalCost (id, value){
     const sum = convertedTotalCost+value;
     setInnerText(id , sum);
 }
-function grandTotalCost (id, value){
-    const GrandTotalCost = document.getElementById(id).innerText;
-    const convertedGrandTotal =parseInt(GrandTotalCost);
-    const sum2 = convertedGrandTotal+value;
-    setInnerText(id , sum2);
+function grandTotalCost (){
+    const totalCost = document.getElementById('total-cost').innerText;
+    const convertedTotalCost =parseInt(totalCost);
+    setInnerText('grand-total', convertedTotalCost);
+    
+
+    const inputField =document.getElementById('coupon-code');
+    const inputText= inputField.value;
+
+    const couponField =document.getElementById('coupon-field');
+
+    
+    if(inputText === 'NEW15'){
+        const sum2 = convertedTotalCost - convertedTotalCost*0.15 ;
+        
+        setInnerText('grand-total', sum2);
+        couponField.classList.add('hidden');
+    }
+    else if(inputText === 'Couple 20'){
+        const sum2 = convertedTotalCost - convertedTotalCost*0.2 ;
+        
+        setInnerText('grand-total', sum2);
+        couponField.classList.add('hidden');
+    }
+
 }
 
 function setInnerText(id, value){
-   document.getElementById(id).innerText =value
-   
+   document.getElementById(id).innerText =value 
 }
 
 
-
-
 document.getElementById('coupon-code').addEventListener('keyup', function(event){
-    const text= event.target.value;
-
+    const text = event.target.value;
     
-
-  
-    document.getElementById('send').addEventListener('click', function(){
-        const activeCoupon = document.getElementById('send');
-        if(text === 'NEW15'){
-            GrandTotalCost.innerText =sum * 0.15;
-            activeCoupon.removeAttribute('disabled');
-        }
-        else if(text === 'Couple 20'){
-            GrandTotalCost.innerText =sum * 0.2 ;
-            activeCoupon.removeAttribute('disabled');
-        }
-        else{
-            activeCoupon.setAttribute('disabled', true);
-
     
-        }
-    })
-    GrandTotalCost.innerText =sum;
-
-
+    const button =document.getElementById('send');
     
+    if(text === 'NEW15' || text === 'Couple 20'){
+        button.removeAttribute('disabled');
+    }
+    else{
+        button.setAttribute('disabled', true);
+    }
 })
 
+// document.getElementById('coupon-code').addEventListener('keyup', function(event){
+//     const text= event.target.value;document.getElementById('send').addEventListener('click', function(){
+//         const activeCoupon = document.getElementById('send');
+//         if(text === 'NEW15' || text === 'Couple 20'){
+//            activeCoupon.removeAttribute('disabled');
+//         }
+        
+//         else{
+//             activeCoupon.setAttribute('disabled', true);
+//              }
+//     })
+// })
