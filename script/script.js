@@ -39,38 +39,43 @@ for(const seat of seats){
 
     // total 
 
-    const totalCost = document.getElementById('total-cost');
-    const convertedTotalCost =parseInt(totalCost.innerText);
-
-    totalCost.innerText= convertedTotalCost+price;
+    totalCost('total-cost', price);
 
     // grand totral
 
-    const GrandTotalCost = document.getElementById('grand-total');
-    const convertedGrandTotal =parseInt(GrandTotalCost.innerText);
-    GrandTotalCost.innerText= convertedGrandTotal+price;
+    grandTotalCost('grand-total', price)
 
     
    })
 };
 
-// function Cost(id, value){
-//     const totalCost =document.getElementById(id);
-//     convertedTotalCost = parseInt(totalCost.innerText);
+function totalCost (id, value){
+    const totalCost = document.getElementById(id).innerText;
+    const convertedTotalCost =parseInt(totalCost);
+    const sum = convertedTotalCost+value;
+    setInnerText(id , sum);
+}
+function grandTotalCost (id, value){
+    const GrandTotalCost = document.getElementById(id).innerText;
+    const convertedGrandTotal =parseInt(GrandTotalCost);
+    const sum2 = convertedGrandTotal+value;
+    setInnerText(id , sum2);
+}
 
-//     totalCost.innerText= convertedTotalCost + value;
-// }
+function setInnerText(id, value){
+   document.getElementById(id).innerText =value
+   
+}
+
+
+
 
 document.getElementById('coupon-code').addEventListener('keyup', function(event){
     const text= event.target.value;
 
     
 
-    const GrandTotalCost = document.getElementById('grand-total');
-    const convertedGrandTotal =parseInt(GrandTotalCost.innerText);
-    const sum = convertedGrandTotal+price;
-    GrandTotalCost.innerText =sum;
-
+  
     document.getElementById('send').addEventListener('click', function(){
         const activeCoupon = document.getElementById('send');
         if(text === 'NEW15'){
@@ -84,8 +89,11 @@ document.getElementById('coupon-code').addEventListener('keyup', function(event)
         else{
             activeCoupon.setAttribute('disabled', true);
 
+    
         }
     })
+    GrandTotalCost.innerText =sum;
+
 
     
 })
