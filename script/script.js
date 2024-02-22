@@ -29,7 +29,10 @@ for(const seat of seats){
         return;
     }
 
-
+    if(count === 4){
+        document.getElementById('coupon-field').classList.remove('hidden');
+    }
+    
     
     // set seat info
 
@@ -69,6 +72,7 @@ for(const seat of seats){
 
     
    })
+   
 };
 
 function totalCost (id, value){
@@ -105,7 +109,7 @@ function grandTotalCost (){
 }
 
 function setInnerText(id, value){
-   document.getElementById(id).innerText =value 
+   document.getElementById(id).innerText =value ;
 }
 
 
@@ -123,15 +127,4 @@ document.getElementById('coupon-code').addEventListener('keyup', function(event)
     }
 })
 
-// document.getElementById('coupon-code').addEventListener('keyup', function(event){
-//     const text= event.target.value;document.getElementById('send').addEventListener('click', function(){
-//         const activeCoupon = document.getElementById('send');
-//         if(text === 'NEW15' || text === 'Couple 20'){
-//            activeCoupon.removeAttribute('disabled');
-//         }
-        
-//         else{
-//             activeCoupon.setAttribute('disabled', true);
-//              }
-//     })
-// })
+

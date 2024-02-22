@@ -259,7 +259,7 @@
                       <h2 class="text-black font-semibold text-lg">Total Price</h2>
                       <h2 class="text-black font-semibold text-lg">BDT <span id="total-cost">0</span>tk</h2>
                     </div>
-                    <div id="coupon-field" class="flex">
+                    <div id="coupon-field" class="flex hidden">
                       <input id="coupon-code" type="text" placeholder="Have any coupon?" class="coupon py-3 pl-3 flex-1  rounded-l-2xl">
                       <button id="send" class="btn bg-[#1DD100] text-white  rounded-l-none rounded-r-2xl px-5"  onclick="grandTotalCost()"  disabled>Apply</button>
                     </div>
@@ -276,14 +276,14 @@
                       <input type="text" placeholder="Enter Your Name" class="w-full border py-5 pl-5 rounded-2xl" required>
                     </div>
                     <div>
-                      <h3 class="text-[#030712] font-semibold text-lg pt-5 ">Phone Number*</h3>
-                      <input type="number" placeholder="Enter Your Phone Number"class="w-full border py-5 pl-5 rounded-2xl" required>
+                      <h3  class="text-[#030712] font-semibold text-lg pt-5 ">Phone Number*</h3>
+                      <input id="phone-number" type="number" placeholder="Enter Your Phone Number"class="w-full border py-5 pl-5 rounded-2xl" required>
                     </div>
                     <div>
                       <h3 class="text-[#030712] font-semibold text-lg pt-5 ">Email*</h3>
                       <input type="email" placeholder="Enter Your email"class="w-full border py-5 pl-5 rounded-2xl" >
                     </div>
-                    <button class="btn bg-[#1DD100] text-white font-extrabold text-xl " onclick="my_modal_3.showModal()">NEXT</button>
+                    <button id="next" class="btn bg-[#1DD100] text-white font-extrabold text-xl " onclick="my_modal_3.showModal()" >NEXT</button>
                     <dialog id="my_modal_3" class="modal">
                       <div class="modal-box text-center">
                         <form method="dialog">
